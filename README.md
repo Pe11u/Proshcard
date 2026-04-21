@@ -1,50 +1,56 @@
 # Proshcard
 
-Proshcardは、シンプルながらも高機能なWebベースの単語帳・クイズ学習ツールです。英単語、用語の暗記、試験対策など、あらゆる学習に最適化されています。
+Proshcard is a simple yet high-performance web-based flashcard and quiz tool. It is optimized for all types of learning, including English vocabulary, terminology memorization, and exam preparation.
 
-GitHub Pagesで即座に公開して使用することを想定して設計されており、インストール不要でブラウザから直接学習を開始できます。
+Designed to be deployed instantly via GitHub Pages, it requires no installation and allows you to start studying directly from your browser.
 
-## 特徴
+---
 
-- **🎯 2つの学習モード**:
-  - **四択クイズ**: 選択肢から正解を選ぶスピード重視の学習。
-  - **タイピング**: 実際に書き込んで定着度を確認する実践的な学習。
-- **🌐 多言語対応**: 日本語、英語、韓国語、中国語（簡体/繁体）、スペイン語、ドイツ語、フランス語の8ヶ国語に対応。
-- **🎨 モダンなデザイン**: ダークモードとライトモードの切り替えが可能。シンプルで集中しやすい贅沢なUI。
-- **🛠 柔軟なカスタマイズ**:
-  - カードデータのインポート/エクスポート（JSON形式）。
-  - 出題順（ランダム、入力順、逆順）の設定。
-  - 単語と意味の反転学習。
-  - 正誤判定に応じた再挑戦ロジック（最大再試行回数の設定可能）。
-- **⏱ 詳細な時間制限**: 全体の制限時間だけでなく、1問ごとのタイマー設定も可能。
-- **📊 学習結果の分析**: 正答率や、特に間違えやすい単語のランキングを表示。
-- **🎵 フィードバックサウンド**: 正解・不正解時に視覚と聴覚でフィードバックを提供（オン/オフ可能）。
+## Features
 
-## 使い方
+* **🎯 Two Learning Modes**:
+    * **Multiple Choice**: Speed-focused learning where you select the correct answer from four options.
+    * **Typing**: Practical learning where you type out the answer to ensure mastery.
+* **🌐 Multilingual Support**: Supports 8 languages: Japanese, English, Korean, Chinese (Simplified/Traditional), Spanish, German, and French.
+* **🎨 Modern Design**: Switch between Dark and Light modes. Features a premium, minimalist UI designed for deep focus.
+* **🛠 Flexible Customization**:
+    * Import/Export card data in JSON format.
+    * Configurable question order (Random, Input Order, or Reverse).
+    * Flipped learning (swap terms and definitions).
+    * Re-challenge logic based on accuracy (customizable maximum retry attempts).
+* **⏱ Detailed Time Limits**: Set limits for the overall session or per individual question.
+* **📊 Performance Analytics**: View your accuracy rate and a ranking of words you frequently miss.
+* **🎵 Audio Feedback**: Visual and auditory feedback for correct and incorrect answers (can be toggled on/off).
 
-1. `index.html` をブラウザで開くか、GitHub Pagesで公開されたURLにアクセスします。
-2. **プリセットの作成**: 「カードを追加」ボタンで単語と意味を手動で入力するか、JSONファイルをインポートします。
-3. **学習設定**: 出題回数、クイズモード、出題順などを好みに合わせて調整します。
-4. **学習開始**: 「学習を始める」をクリックしてスタート！
+---
 
-## インポート/エクスポート形式
+## How to Use
 
-カードデータは以下の単純なテキスト形式（Rawエディタ時）またはJSON形式で管理されます。
+1.  Open `index.html` in your browser or access the URL published via GitHub Pages.
+2.  **Create Presets**: Manually enter terms and definitions using the "Add Card" button, or import a JSON file.
+3.  **Configure Settings**: Adjust the number of repetitions, quiz mode, question order, etc., to your preference.
+4.  **Start Learning**: Click "Start Learning" to begin!
 
-### テキスト形式 (CSV風)
+---
+
+## Import/Export Formats
+
+Card data is managed in a simple text format (via the Raw Editor) or JSON format.
+
+### Text Format (CSV-style)
 ```text
-apple,リンゴ
-banana,バナナ
-cherry,さくらんぼ
+apple,Apple
+banana,Banana
+cherry,Cherry
 ```
 
-### JSON形式 (エクスポート/インポート用)
+### JSON Format (for Import/Export)
 ```json
 {
-  "title": "英単語 Lesson 1",
+  "title": "English Vocabulary Lesson 1",
   "cards": [
-    { "term": "apple", "definition": "リンゴ" },
-    { "term": "banana", "definition": "バナナ" }
+    { "term": "apple", "definition": "Apple" },
+    { "term": "banana", "definition": "Banana" }
   ],
   "settings": {
     "repetitions": 1,
@@ -54,9 +60,11 @@ cherry,さくらんぼ
 }
 ```
 
-## デモ (GitHub Pages)
+---
 
-このプロジェクトを自分自身のGitHubリポジトリにアップロードし、Settings > Pages から `main` ブランチを公開することで、すぐに自分専用の学習環境を構築できます。
+## Demo (GitHub Pages)
+
+By uploading this project to your own GitHub repository and enabling GitHub Pages (Settings > Pages > `main` branch), you can instantly build your own personal learning environment.
 
 ---
 
